@@ -1,0 +1,107 @@
+body{
+	background-color: grey;
+	min-width: 988px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+li{
+	list-style-type: none;
+}
+
+
+.header{
+	background-color: green;
+	padding:0 100px;
+	position: relative;
+	color: white;
+	
+}
+
+.logo{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	background-image: url(../images/logo.png);
+	background-size: cover;
+	float: left;
+}
+
+.nav{
+	min-width: 40%;
+	display: inline-block;
+	margin: 0 150px;
+	vertical-align: top;
+	text-align: center;
+	font-size: 1rem;
+	padding: 0;
+}
+
+.nav ul{
+	margin: 0;
+	padding: 0;
+
+}
+.nav>ul>li{
+	display: inline-block;
+	margin-right: 40px;
+	padding-bottom: 20px;
+}
+.nav>ul>li>a:after{
+	content: "";
+	display:inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url(../images/row-down.png);
+	background-size: cover;
+	vertical-align: bottom;
+}
+.sign{
+	float: right;
+}
+
+
+.sign>a{
+	border:solid 1px;
+	border-radius: 10rem;
+	padding: 0.5rem 2rem;
+}
+.nav,.sign{
+	padding: 20px 20px 0;
+}
+
+/*子导航*/
+.subnav{
+	left: 0;
+	position: absolute;
+	top:67px;
+	text-align: center;
+    padding: 20px 0;
+    display: none;
+}
+
+.subnav ul{
+	display: inline-block;
+	padding: 0 50px;
+	vertical-align: top;
+	min-height: 7rem;
+}
+
+.subnav ul:last-child{
+	border-left: solid 1px;
+}
+.subnav ul li{
+	text-align: left;
+	margin-bottom: 1rem;
+
+}
+
+/*hover后改变样式*/
+.nav>ul>li:hover .subnav{
+	display: block;
+}
+.nav>ul>li:hover{
+	height: 180px;
+}
