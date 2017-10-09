@@ -1,6 +1,7 @@
 body{
 	background-color: grey;
 	min-width: 988px;
+	margin: 0;
 }
 
 a{
@@ -13,11 +14,10 @@ li{
 
 
 .header{
-	background-color: green;
 	padding:0 100px;
 	position: relative;
 	color: white;
-	
+	background-image: url(../images/bkg_image.jpg);
 }
 
 .logo{
@@ -37,6 +37,7 @@ li{
 	text-align: center;
 	font-size: 1rem;
 	padding: 0;
+
 }
 
 .nav ul{
@@ -46,8 +47,10 @@ li{
 }
 .nav>ul>li{
 	display: inline-block;
-	margin-right: 40px;
 	padding-bottom: 20px;
+}
+.nav>ul>li>a{
+	padding: 1em;
 }
 .nav>ul>li>a:after{
 	content: "";
@@ -80,6 +83,7 @@ li{
 	text-align: center;
     padding: 20px 0;
     display: none;
+    
 }
 
 .subnav ul{
@@ -104,4 +108,8 @@ li{
 }
 .nav>ul>li:hover{
 	height: 180px;
+}
+
+.nav>ul>li>a:hover{
+	border-bottom: solid;
 }
